@@ -7,7 +7,7 @@ This repository contains the **deployment and testing of the Redmine open-source
 - Functional issues reporting and test case documentation
   
 ## Load/Performance Testing (JMeter)
-###JMeter test plan: jmeter/redmine_load_test.jmx
+JMeter test plan: jmeter/redmine_load_test.jmx
 Tests multiple concurrent users on:
 - Login
 - Project creation
