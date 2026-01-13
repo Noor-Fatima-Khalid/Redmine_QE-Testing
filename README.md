@@ -18,3 +18,18 @@ Tests multiple concurrent users on:
 - Load redmine_load_test.jmx
 - Execute test and analyze results
 
+## Functional/UI Testing (Selenium)
+
+Dependencies:
+  pip install selenium webdriver-manager
+
+The Selenium script covers:
+- Login to Redmine
+- Navigate to Projects and create a new project
+- Administration sections: Users, Groups, Roles & Permissions, Workflow, Custom Fields, Enumerations, Settings, Information
+- Navigate to "My page"
+
+### Run script:
+  python selenium/selenium_script.py
+  
+Test case table and functional issues are documented in docs.docx.
