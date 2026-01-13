@@ -1,7 +1,4 @@
-# Testing---Redmine
-This repository contains docker deployment, load testing and functional testing of 
-
-## Project Overview
+## Overview
 
 This repository contains the **deployment and testing of the Redmine open-source project management tool (https://www.redmine.org/)**. It covers:
 - Deployment using **Docker Desktop** on Windows with WSL2
@@ -9,4 +6,15 @@ This repository contains the **deployment and testing of the Redmine open-source
 - Performance/load testing using **JMeter**
 - Functional issues reporting and test case documentation
   
+## Load/Performance Testing (JMeter)
+###JMeter test plan: jmeter/redmine_load_test.jmx
+Tests multiple concurrent users on:
+- Login
+- Project creation
+- Issue creation
+- Enumeration creation
+###Run JMeter test plan:
+- Open Apache JMeter
+- Load redmine_load_test.jmx
+- Execute test and analyze results
 
