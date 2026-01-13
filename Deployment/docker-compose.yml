@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  redmine:
+    image: redmine:latest
+    ports:
+      - "3000:3000"
+    restart: always
+    volumes:
+      - redmine_data:/usr/src/redmine/files
+    environment:
+      REDMINE_DB_SQLITE3: /usr/src/redmine/db/redmine.sqlite3
+
+volumes:
+  redmine_data:
