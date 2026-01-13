@@ -13,6 +13,7 @@ Tests multiple concurrent users on:
 - Project creation
 - Issue creation
 - Enumeration creation
+  
 ###Run JMeter test plan:
 - Open Apache JMeter
 - Load redmine_load_test.jmx
