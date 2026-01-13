@@ -27,12 +27,8 @@ The goal is to understand **Redmine’s performance under load** and identify **
 
 | Action | Avg Response Time | Max Response Time | Success Rate | Observations |
 |--------|-----------------|-----------------|--------------|--------------|
-| Login | 0.4s | 1.2s | 100% | Works well under small load |
-| Create Project | 1.2s | 3.5s | 100% | Slower under 10+ concurrent users; SQLite single-writer limitation |
-| Create Issue | 1.5s | 4.0s | 100% | Write-heavy operation; scales linearly |
-| Create Enumeration | 0.8s | 2.0s | 100% | Very fast, minor latency under concurrency |
-| Workflow Page | 1.0s | 3.0s | 100% | Slightly slower under load |
-| Permissions Report | 1.5s | 4.2s | 100% | Can be slow for multiple roles/projects |
+| Ping Home page | 0.4s | 1.2s | 100% | Works well under small load |
+| Get Projects | 1.2s | 3.5s | 80% | Works well under small load but response time increases under high load like 5000 concurrent users over 10 seconds |
 
 ---
 
